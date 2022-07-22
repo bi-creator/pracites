@@ -1,0 +1,49 @@
+.heading{
+    text-align: center;
+    color: bisque;
+    text-transform: capitalize;
+
+}
+.body{
+    background-color: black;
+
+}
+.heading2{
+    color: blanchedalmond;
+    text-transform: capitalize;
+}
+.grenhig{
+    
+    text-transform: lowercase;
+}
+a {
+    color: greenyellow;
+}
+a:link {
+    color:rgb(47, 255, 57);
+    text-decoration: none;
+  }
+  
+
+  a:visited {
+    color: green;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color:white;
+    text-decoration: underline;
+  }
+  
+
+  a:active {
+    color: blue;
+    text-decoration: none;
+  }
+button{
+    background-color: navajowhite;
+    color: black;
+}
+p{
+    color: cornflowerblue;
+}

@@ -8,6 +8,10 @@
     <title>html css JavaScript</title>
     <link rel="stylesheet" type="text/css" href="css_trail.css">
     <style>
+        table, th, td {
+        border:1px solid white;
+        
+      }
         body {background-color:black;}
         h1 {color: rgb(38, 255, 0);}
         h2 {color: rgb(38, 255, 0);}
@@ -80,6 +84,22 @@
                 letter-spacing: 8px;
                 color: black;
                 text-transform: lowercase;
+                }
+
+                th {
+                  height: 70px;
+                  /* padding: 15px; */
+                }
+                td{
+                  text-align: center;
+                }
+                
+                tr:nth-child(even) {background-color: red;}
+                tr:nth-child(odd) {background-color: olivedrab;}
+                tr:hover {background-color: rgb(80, 255, 124);}
+                th {
+                  background-color: whitesmoke;
+                  color: black;
                 }
       </style>
 </head>
@@ -158,6 +178,35 @@
             <p>This is some text in a div element.</p>
             <p class="texting">some text with texting css styles</p>
           </div><br>
+          <div style="overflow-x:auto;">
+          <table style="width:100% ;">
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>m&r</td>
+              <td>Manjith</td>
+              <td>India</td>
+            </tr>
+            <tr>
+              <td>mKr</td>
+              <td>Reddy</td>
+              <td>India</td>
+            </tr>
+          </table>
+        </div>
         
 
 
