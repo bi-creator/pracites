@@ -21,3 +21,11 @@ function tochange(){
   document.getElementById("o").innerHTML = q;
   console.log(q);
 }
+class scriptclass{
+     constructor(name,age)
+     {
+      this.name=name;
+      this.age=age;
+     }
+     
+}
