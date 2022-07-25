@@ -62,9 +62,13 @@ ul {
   border-left-style: solid;
   border-left-width: 15px;
   border-color: rgba(4, 32, 243, 0.977);
-  margin-left: 170px; 
+  /* margin-left: 0;  */
   overflow: hidden;
-  /* background-color:white; */
+  background-image: url("https://m.media-amazon.com/images/I/71V9nv5oIEL._AC_SX466_.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 50px 50px;
+  background-color:rgb(164, 239, 242);
 }
 
 li {
@@ -81,4 +85,15 @@ li a {
 
 li a:hover {
   background-color: #111111;
+}
+.mbp{
+  width: 300px;
+  padding: 25px;
+}
+.divm{
+  margin-left: 40px;
+}
+video{
+  width: 1000px;
+  height: 100px;
 }
