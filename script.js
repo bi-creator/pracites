@@ -27,5 +27,24 @@ class scriptclass{
       this.name=name;
       this.age=age;
      }
-     
+
+}
+class getset{
+  constructor(a)
+  {
+    this.f=a;
+  }
+  set fa(d)
+  {
+    g= this.f+d;
+    return g;
+  }
+  get fa()
+  {
+    return this.f;
+  }
+}
+function homepage(){
+  window.location.href="page1.html";
+  return false;
 }
