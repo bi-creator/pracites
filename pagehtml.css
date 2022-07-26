@@ -163,8 +163,10 @@ li a:hover {
   border: none;
   color: black;
   padding: 12px 16px; /* Some padding */
-  font-size: 50px; /* Set a font size */
+  font-size: 30px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
+  display: inline;
+  
 }
 
 /* Darker background on mouse-over */
@@ -173,4 +175,54 @@ li a:hover {
   color: white;
   border-radius: 20px;
   
+}
+.grid-container {
+  padding: 10px;
+  display: grid;
+  gap: 5px;
+  background-color: white
+ 
+}
+
+.grid-item {
+  background-color: rgba(234, 244, 245, 0.826);
+  text-align: justify;
+  color: #111111;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+ 
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+.item6{
+  grid-column: 1 / span 3;
+  grid-row: 4;
+}
+.barhome{
+  max-height: 60px;
+  background-color: antiquewhite;
+  /* display: inline-block; */
+  overflow: hidden;
+}
+.pin{
+  display: inline;
+  text-transform: capitalize;
+  font-size: 40px;
+  color: black;
+}
+.ivm{
+  margin-bottom: 5px,black;
 }
