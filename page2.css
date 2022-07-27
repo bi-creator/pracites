@@ -1,0 +1,50 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: inline-block;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  .btn1 {
+    /* background-color: white;  */
+    border: none;
+    color: black;
+    padding: 12px 16px; /* Some padding */
+    font-size: 30px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    /* display: inline; */
+    
+    
+  }
+  .btn1:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+    
+  }
+  .headingpg2{
+    text-align: center;
+    color: black;
+    text-transform: capitalize;
+  
+  }
+.divm{
+    margin-left: 40px;
+  }
