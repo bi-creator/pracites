@@ -117,16 +117,17 @@ $(document).ready(function(){
 
 
 ////////////////
-
+var xhr = null;
 var name;
 $(document).ready(function(){
+  
   $("#us").click(function(){
     name=$("#newuser").val()
     addUsers();
 
   });
 });
-var xhr = null;
+
     getXmlHttpRequestObject = function () {
         if (!xhr) {
             // Create a new XMLHttpRequest object 
