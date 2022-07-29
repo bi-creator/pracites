@@ -117,6 +117,15 @@ $(document).ready(function(){
 
 
 ////////////////
+
+var name;
+$(document).ready(function(){
+  $("#us").click(function(){
+    name=$("#newuser").val()
+    addUsers();
+
+  });
+});
 var xhr = null;
     getXmlHttpRequestObject = function () {
         if (!xhr) {
@@ -130,6 +139,7 @@ var xhr = null;
         if (xhr.readyState == 4 && xhr.status == 200) {
             console.log("User data received!");
             getDate();
+            
             dataDiv = document.getElementById('data');
             // Set current data text
             dataDiv.innerHTML = xhr.responseText;
@@ -140,18 +150,26 @@ var xhr = null;
         xhr = getXmlHttpRequestObject();
         xhr.onreadystatechange = dataCallback;
         // asynchronous requests
-        xhr.open("GET", "http://127.0.0.1:8000/data/", true);
+        xhr.open("GET", "http://127.0.0.1:8000/gettxtenterdata", true);
         // Send the request over the network
         xhr.send(null);
     }
+    function addUsers() {
+
+      console.log("adding users...");
+      xhr = getXmlHttpRequestObject();
+      // xhr.onreadystatechange = dataCallback;
+      // asynchronous requests
+    
+      xhr.open("POST","http://127.0.0.1:8000/enterdata?name="+name, true);
+      // Send the request over the network
+      xhr.send(null);
+  }
     function getDate() {
         date = new Date().toString();
         document.getElementById('time-container').textContent
             = date;
-    }
-    (function () {
-        getDate();
-    })();
+    };
 
 
 

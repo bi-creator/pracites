@@ -1,7 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from database import query, queryd
+
 stu=FastAPI()
+
 stu.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -28,3 +30,23 @@ def getRequisitionAgingList():
     result=query(sql_quary)
     return result
 
+
+
+@stu.post('/enterdata')
+def getting(name):
+    a=name
+    with open('info.txt', 'a') as f:
+     f.write('\n')
+     f.write(name)
+
+    return 
+
+
+@stu.get('/gettxtenterdata')
+def getting():
+    
+    with open('info.txt') as f:
+     
+     a=f.read()
+    print(a)
+    return a
